@@ -1,0 +1,7 @@
+
+http://www.w3big.com/pt/mysql/mysql-data-types.html
+
+http://www.criarweb.com/artigos/118.php
+https://qastack.com.br/programming/13506832/what-is-the-mysql-varchar-max-size
+https://imasters.com.br/back-end/os-tipos-de-dados-no-mysql-string
+https://qastack.com.br/programming/6766781/maximum-length-for-mysql-type-text
