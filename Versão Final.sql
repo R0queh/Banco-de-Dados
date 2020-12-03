@@ -3,7 +3,7 @@ use padoca;
 
 
 create table tb_comanda(
-	codigoComanda bigint not null,
+	codigoComanda bigint auto_increment not null,
     descricao varchar(255),
     codigoPao bigint not null, 
     codigoBolo bigint not null,
@@ -171,7 +171,30 @@ insert into tb_cliente(nome, cpf, celular, endereco, numero, cep)
 	values ("Bruno Santos", "33333333380", "099999999997", "Rua das Esmeraldinas", 6, "13133335");
 insert into tb_cliente(nome, cpf, celular, endereco, numero, cep) 
 	values ("Ana Cruz", "33333333370", "099999999996", "Rua das Esmeraldas negras", 5, "13133336");
-    
+
+use padoca;
+select*from tb_comanda   
+select*from tipo_bolo 
+select*from tipo_paes 
+select*from tb_formas_pag
+select*from tb_cliente
+
+insert into tb_comanda(descricao, codigoPao, codigoBolo, codigoPagamento, codigoBebida, codigoCliente) values ("Cliente", 1, 1, 1, 1, 1);
+
+select tipo_bolo.descricao, tb_comanda.codigoBolo, tipo_bolo.valor from tb_comanda inner join tipo_bolo on tipo_bolo.codigo = tb_comanda.codigoBolo
+
+insert into tb_comanda(descricao, codigoPao, codigoBolo, codigoPagamento, codigoBebida, codigoCliente) values ("Entrega", 2, 2, 2, 2, 2);
+
+insert into tb_comanda(descricao, codigoPao, codigoBolo, codigoPagamento, codigoBebida, codigoCliente) values ("Retirada", 3, 3, 3, 3, 3);
+
+insert into tb_comanda(descricao, codigoPao, codigoBolo, codigoPagamento, codigoBebida, codigoCliente) values ("Entrega", 4, 4, 4, 4, 4);
+
+insert into tb_comanda(descricao, codigoPao, codigoBolo, codigoPagamento, codigoBebida, codigoCliente) values ("Retirada", 5, 5, 5, 5, 2);
+
 */
 
-select*from tb_cliente
+
+
+
+
+
